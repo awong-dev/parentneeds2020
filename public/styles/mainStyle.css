@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px; /* fallback font size: should be large enough for mobile screens */
+  font-size: min(max(16px, 3vw), 24px); /* responsive font size */
+  --bg-color: #ECEFF1; /* main background color */
+  --txt-color: rgba(0,0,0,0.87); /* main text color */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) { /* remove all animations and transitions for people who prefer not to see them */
+  * {
+    animation-play-state: paused;
+    transition: none;
+    scroll-behavior: auto;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--txt-color);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  background: white;
+  max-width: 360px;
+  margin: 100px auto 16px;
+  padding: 32px 24px;
+  border-radius: 3px;
+}
+
+#message h2 {
+  color: #ffa100;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+
+#message h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(0,0,0,0.6);
+  margin: 0 0 1rem;
+}
+
+#message p {
+  line-height: 140%;
+  margin: 1rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+.bttnLink {
+  display: inline-block;
+  align-self: center;
+  background: #039be5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 2.5rem;
+}
+
+/*
+#message a {
+  display: block;
+  text-align: center;
+  background: #039be5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px
+}
+*/
+
+#message, #message a {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#load { color: rgba(0,0,0,0.4);
+  text-align: center;
+  font-size: .9rem;
+}
+
+@media (max-width: 600px) {
+  body, #message {
+    margin-top: 0;
+    background: white; box-shadow: none;
+  }
+
+  body {
+    border-top: 16px solid #ffa100;
+  }
+}
