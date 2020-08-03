@@ -68,6 +68,10 @@ main {
   display: flex;
 }
 
+.flexCol {
+  flex-direction: column;
+}
+
 .flexJustCenterContent {
   justify-content: center;
 }
