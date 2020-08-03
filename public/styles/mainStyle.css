@@ -38,9 +38,9 @@ main {
 
 #message {
   background: white;
-  max-width: 360px;
+  max-width: 48ch;
   margin: 100px auto 16px;
-  padding: 32px 24px;
+  padding: 2rem;
   border-radius: 3px;
 }
 
@@ -64,16 +64,36 @@ main {
   font-size: 1rem;
 }
 
+.flexCont {
+  display: flex;
+}
+
+.flexJustCenterContent {
+  justify-content: center;
+}
+
+.flexJustCenterSlf {
+  justify-self: center;
+}
+
+.flexAlignCenterItm {
+  align-items: center;
+}
+
+.flexAlignCenterSlf {
+  align-self: center;
+}
+
 .bttnLink {
   display: inline-block;
-  align-self: center;
+  align-text: center;
   background: #039be5;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   padding: 1rem;
   border-radius: 4px;
-  margin: 2.5rem;
+  margin: .5rem;
 }
 
 /*
