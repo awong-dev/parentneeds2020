@@ -3,8 +3,10 @@ html {
   font-size: 18px; /* fallback font size: should be large enough for mobile screens */
   font-size: min(max(16px, 3vw), 24px); /* responsive font size */
   --bg-color: #ECEFF1; /* main background color */
-  --alt-bg: rgba(255, 161, 0, 0.3); /* secondary background color */
+  --alt-bg: rgba(255, 193, 7, 0.2); /* secondary background color */
   --txt-color: rgba(0,0,0,0.87); /* main text color */
+  --alt-color: #0277BD; /* secondary text color */
+  --third-color: #0277bc; /* buttons' color */
 }
 
 *, *:before, *:after {
@@ -40,13 +42,13 @@ main {
 #message {
   background: white;
   max-width: 48ch;
-  margin: 100px auto 16px;
+  margin: 2rem;
   padding: 2rem;
   border-radius: 3px;
 }
 
 #message h2 {
-  color: #ffa100;
+  color: var(--third-color);
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0 0 0.5rem;
@@ -99,8 +101,8 @@ main {
 
 .bttnLink {
   display: inline-block;
-  align-text: center;
-  background: #039be5;
+  text-align: center;
+  background: var(--third-color);
   text-transform: uppercase;
   text-decoration: none;
   color: white;
