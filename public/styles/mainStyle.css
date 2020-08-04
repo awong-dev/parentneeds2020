@@ -3,7 +3,7 @@ html {
   font-size: 18px; /* fallback font size: should be large enough for mobile screens */
   font-size: min(max(16px, 3vw), 24px); /* responsive font size */
   --bg-color: #ECEFF1; /* main background color */
-  --alt-bg: rgba(255, 161, 0, 0.6) /* secondary background color */
+  --alt-bg: rgba(255, 161, 0, 0.3); /* secondary background color */
   --txt-color: rgba(0,0,0,0.87); /* main text color */
 }
 
@@ -143,6 +143,12 @@ main {
 }
 
 .foot {
+  margin-top: auto;
   padding: 1.25rem;
   background: var(--alt-bg);
+  width: 100vw;
+}
+
+.lSNone {
+  list-style: none;
 }
